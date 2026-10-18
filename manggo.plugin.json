@@ -1,0 +1,47 @@
+{
+  "manifestVersion": 1,
+  "id": "cn.manggo.offline-pinyin",
+  "name": "汉字注音",
+  "version": "1.1.0",
+  "icon": "icon.png",
+  "description": "离线汉字注音：上方带调拼音，下方原文；支持简繁体与词组多音字。",
+  "permissions": [],
+  "runtime": {
+    "kind": "bun",
+    "api": "manggo.plugin.v1",
+    "main": "main.js"
+  },
+  "services": [
+    {
+      "id": "pinyin",
+      "kind": "translation",
+      "displayName": "汉字注音（离线）",
+      "entry": "translate",
+      "resultType": "text",
+      "config": [
+        {
+          "key": "columns",
+          "label": "双行显示宽度",
+          "control": "integer",
+          "default": 36,
+          "description": "12–100 个等宽字符宽度，窗口窄时调小。比例字体下不能保证逐字严格对齐。"
+        },
+        {
+          "key": "toneSandhi",
+          "label": "一、不的口语变调",
+          "control": "boolean",
+          "default": false,
+          "description": "默认保留字典声调；开启后按词典规则处理一、不的变调，不处理连续三声。"
+        },
+        {
+          "key": "readings",
+          "label": "自定义词语读音（JSON）",
+          "control": "textarea",
+          "default": "{}",
+          "placeholder": "{\"单田芳\":\"shàn tián fāng\",\"重\":\"zhòng\"}",
+          "description": "每个汉字对应一个拼音，以空格分隔，使用带调字母；轻声不标调。最长词优先，仅影响当前服务。"
+        }
+      ]
+    }
+  ]
+}

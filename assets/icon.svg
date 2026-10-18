@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <title>汉字注音：zì 在字上方</title>
+  <rect x="8" y="8" width="240" height="240" rx="56" fill="#176B50"/>
+  <rect x="18" y="18" width="220" height="220" rx="46" fill="none" stroke="#FFFFFF" stroke-opacity=".12" stroke-width="2"/>
+  <!-- zì, outlined instead of relying on fonts -->
+  <g fill="none" stroke="#F7D578" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M96 51h27L96 77h28"/>
+    <path d="M146 52v25M137 34l13 9"/>
+  </g>
+  <!-- 字: dot, roof, then 子 -->
+  <g fill="none" stroke="#FFFFFF" stroke-width="11" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M125 101l7 8M76 138v-16h104v16"/>
+    <path d="M99 148h53l-24 21v32q0 9-17 4M88 178h80"/>
+  </g>
+</svg>
